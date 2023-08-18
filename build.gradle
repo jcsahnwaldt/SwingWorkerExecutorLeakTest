@@ -1,0 +1,11 @@
+plugins {
+    id 'application'
+}
+
+compileJava {
+    options.compilerArgs << '--add-exports=java.desktop/sun.awt=ALL-UNNAMED'
+}
+
+application {
+    mainClass = 'Test'
+}
