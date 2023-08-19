@@ -8,4 +8,5 @@ compileJava {
 
 application {
     mainClass = 'Test'
+    applicationDefaultJvmArgs << '--add-exports=java.desktop/sun.awt=ALL-UNNAMED'
 }
