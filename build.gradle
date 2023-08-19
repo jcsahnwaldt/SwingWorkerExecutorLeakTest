@@ -7,6 +7,6 @@ compileJava {
 }
 
 application {
-    mainClass = 'Test'
+    mainClass = 'SwingWorkerExecutorLeakTest'
     applicationDefaultJvmArgs << '--add-exports=java.desktop/sun.awt=ALL-UNNAMED'
 }

@@ -8,7 +8,7 @@ import java.lang.ref.WeakReference;
 import java.util.concurrent.ExecutorService;
 import java.beans.PropertyChangeListener;
 
-public class Test {
+public class SwingWorkerExecutorLeakTest {
 
   private static AppContext appContext;
 
