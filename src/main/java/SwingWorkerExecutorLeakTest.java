@@ -17,7 +17,7 @@ public class SwingWorkerExecutorLeakTest {
     // AppContext must be in new thread group, otherwise dispose() throws
     Thread thread = new Thread(new ThreadGroup("Test"), "Test") {
       public void run() {
-        appContext = ((SunToolkit)Toolkit.getDefaultToolkit()).createNewAppContext();
+        appContext = SunToolkit.createNewAppContext();
         new SwingWorker<Void, Void>() {
           protected Void doInBackground() {
             return null;
