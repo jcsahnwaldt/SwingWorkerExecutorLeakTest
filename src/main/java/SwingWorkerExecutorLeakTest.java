@@ -8,6 +8,12 @@ import java.lang.ref.WeakReference;
 import java.util.concurrent.ExecutorService;
 import java.beans.PropertyChangeListener;
 
+/**
+ * @test
+ * @bug 8314755
+ * @summary SwingWorker listener should not keep strong reference to executor
+ * @run main SwingWorkerExecutorLeakTest
+ */
 public class SwingWorkerExecutorLeakTest {
 
   private static AppContext appContext;
